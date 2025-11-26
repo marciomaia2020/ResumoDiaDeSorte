@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados Dia de Sorte</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="stylesheet" href="../css/styles.css">
+	<script src="../js/scripts.js"></script>
+
+	
     <style>
         * {
             margin: 0;
@@ -318,6 +322,7 @@
 <body>
     <div class="container">
         <div class="header">
+		<div class="logo"></div>
             <h1>Resultados do Dia de Sorte</h1>
             <p>Últimos concursos e premiações</p>
         </div>
@@ -830,8 +835,8 @@
                         <p class="premio-principal">
                             ${concurso.acumulou ? 'Ninguém acertou os 7 números' : `Prêmio: ${formatarMoeda(concurso.premios.seteAcertos)}`}
                         </p>
-                    </div>
-                    
+                    </div><---Teste--->
+                    <!--
                     <div class="premiacoes">
                         <div class="premiacao-item">
                             <i class="fas fa-trophy"></i>
@@ -850,7 +855,8 @@
                             <span>Mês da Sorte: ${concurso.ganhadores.mesDeSorte} apostas ganhadoras - ${formatarMoeda(concurso.premios.mesDeSorte)}</span>
                         </div>
                     </div>
-                    <!--
+					
+                    
                     <div class="local">
                         <i class="fas fa-map-marker-alt"></i> ${concurso.localSorteio}
                     </div>
@@ -1044,4 +1050,5 @@
         });
     </script>
 </body>
+
 </html>
